@@ -1,11 +1,12 @@
 import Chapter3_4_5.*;
 
 import javax.naming.SizeLimitExceededException;
+import java.lang.reflect.Parameter;
 import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) throws SizeLimitExceededException, MaxCapacityException, InvalidIndexException, ElementNotFoundException {
+    public static void main(String[] args) throws SizeLimitExceededException, MaxCapacityException, InvalidIndexException, ElementNotFoundException, EmptyStackException {
 //        TestsForChapter2 tfc2 = new TestsForChapter2();
 //        tfc2.Tests();
 //          String[] Strings = {"Example1", "first", "Testing","final","Fivelast"};
@@ -31,23 +32,38 @@ public class Main {
 //         x.set(5);
 //         System.out.println(exp.asValue());
 
-            MyArray<Integer> array = new MyArray<Integer>(10);
-            array.add(1);
-            array.add(2);
-            array.add(-1);
-        array.add(-1);
-        array.add(-1);
-        array.add(-1);
-        array.add(-1);
-        array.add(-1);
-        array.add(-1);
-        System.out.println(array.toString());
-        System.out.println(array.get(2));
-        System.out.println(array.size());
-        System.out.println(array.isEmpty());
-        array.remove(1);
-        System.out.println(array.toString());
-        System.out.println(array.find(3));
+//            MyArray<Integer> array = new MyArray<Integer>(10);
+//            array.add(1);
+//            array.add(2);
+//            array.add(-1);
+//        array.add(-1);
+//        array.add(-1);
+//        array.add(-1);
+//        array.add(-1);
+//        array.add(-1);
+//        array.add(-1);
+//        System.out.println(array.toString());
+//        System.out.println(array.get(2));
+//        System.out.println(array.size());
+//        System.out.println(array.isEmpty());
+//        array.remove(1);
+//        System.out.println(array.toString());
+//        System.out.println(array.find(3));
+
+//            MyStack<Integer> stack = new MyStack<Integer>(10);
+//            stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        stack.push(1);
+//        System.out.println(stack);
+//        ParenthesisMatching testingExample = new ParenthesisMatching("((a+b)-(c+d))");
+//        System.out.println(testingExample.parse());
+//        ParenthesisMatching anotherTesting = new ParenthesisMatching("((a+b)+c");
+//        System.out.println(anotherTesting.parse());
 
 
     }

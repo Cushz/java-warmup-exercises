@@ -25,7 +25,7 @@ public class MyArray<E> {
     }
     public void add(E e) throws MaxCapacityException
     {
-        if(size >= Capacity)
+        if(size > Capacity)
         {
             throw new MaxCapacityException("Max capacity has been reached");
 
