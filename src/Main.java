@@ -1,12 +1,17 @@
 import Chapter3_4_5.*;
+import Chapter6.CSVReader;
+import Chapter6.SaveRestoreObjFromFile;
 
 import javax.naming.SizeLimitExceededException;
+import java.io.IOException;
 import java.lang.reflect.Parameter;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Stack;
 
 public class Main {
 
-    public static void main(String[] args) throws SizeLimitExceededException, MaxCapacityException, InvalidIndexException, ElementNotFoundException, EmptyStackException {
+    public static void main(String[] args) throws SizeLimitExceededException, MaxCapacityException, InvalidIndexException, ElementNotFoundException, EmptyStackException, IOException, ClassNotFoundException {
 //        TestsForChapter2 tfc2 = new TestsForChapter2();
 //        tfc2.Tests();
 //          String[] Strings = {"Example1", "first", "Testing","final","Fivelast"};
@@ -65,6 +70,9 @@ public class Main {
 //        ParenthesisMatching anotherTesting = new ParenthesisMatching("((a+b)+c");
 //        System.out.println(anotherTesting.parse());
 
+         CSVReader cv = new CSVReader("test.csv");
+         SaveRestoreObjFromFile.saveToFile("test.ser",cv.importData());
+         System.out.println(SaveRestoreObjFromFile.restoreFromFile("test.ser"));
 
     }
 }
